@@ -176,7 +176,7 @@ public class ReaderActivity extends AppCompatActivity implements ReaderToolCardV
         }
         startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(this)
                 .setType(getString(R.string.share_content_type))
-                .setText(String.format("Hey! look at this awesome article \"{0}\" by {1}", viewModel.feed.get().title, viewModel.feed.get().author))
+                .setText(String.format("Hey! look at this awesome article \"%s\" by %s", viewModel.feed.get().title, viewModel.feed.get().author))
                 .getIntent(), getString(R.string.action_share)));
     }
 
