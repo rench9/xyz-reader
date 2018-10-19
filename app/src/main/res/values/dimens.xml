@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text -->
+    <dimen name="typography_display4">112sp</dimen>
+    <dimen name="typography_display3">56sp</dimen>
+    <dimen name="typography_display2">45sp</dimen>
+    <dimen name="typography_display1">34sp</dimen>
+    <dimen name="typography_headline2">30sp</dimen>
+    <dimen name="typography_headline">24sp</dimen>
+    <dimen name="typography_title">20sp</dimen>
+    <dimen name="typography_subheading">16sp</dimen>
+    <dimen name="typography_body2">14sp</dimen>
+    <dimen name="typography_body1">14sp</dimen>
+    <dimen name="typography_caption">12sp</dimen>
+    <dimen name="typography_button">14sp</dimen>
+    <dimen name="typography_exponent">10sp</dimen>
+
+    <!-- Margin / Padding -->
+    <dimen name="unit0">0dp</dimen>
+    <dimen name="unit1">2dp</dimen>
+    <dimen name="unit2">4dp</dimen>
+    <dimen name="unit3">8dp</dimen>
+    <dimen name="unit4">12dp</dimen>
+    <dimen name="unit5">16dp</dimen>
+    <dimen name="unit6">20dp</dimen>
+    <dimen name="unit7">24dp</dimen>
+    <dimen name="unit8">28dp</dimen>
+    <dimen name="unit9">32dp</dimen>
+    <dimen name="unit10">36dp</dimen>
+    <dimen name="unit11">40dp</dimen>
+    <dimen name="unit12">44dp</dimen>
+    <dimen name="unit13">48dp</dimen>
+    <dimen name="unit14">52dp</dimen>
+    <dimen name="unit15">56dp</dimen>
+    <dimen name="unit16">60dp</dimen>
+    <dimen name="unit17">64dp</dimen>
+    <dimen name="unit18">68dp</dimen>
+    <dimen name="unit19">72dp</dimen>
+    <dimen name="unit20">76dp</dimen>
+    <dimen name="unit21">80dp</dimen>
+    <dimen name="unit22">84dp</dimen>
+    <dimen name="unit23">88dp</dimen>
+    <dimen name="unit24">92dp</dimen>
+    <dimen name="unit25">96dp</dimen>
+    <dimen name="unit26">100dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="elevation0">0dp</dimen>
+    <dimen name="elevation1">1dp</dimen>
+    <dimen name="elevation2">2dp</dimen>
+    <dimen name="elevation3">4dp</dimen>
+    <dimen name="elevation4">6dp</dimen>
+    <dimen name="elevation5">8dp</dimen>
+    <dimen name="elevation6">10dp</dimen>
+    <dimen name="elevation7">12dp</dimen>
+    <dimen name="elevation8">14dp</dimen>
+    <dimen name="elevation9">16dp</dimen>
+    <dimen name="elevation10">24dp</dimen>
+
+    <!-- Radius -->
+    <dimen name="radius0">0dp</dimen>
+    <dimen name="radius1">2dp</dimen>
+    <dimen name="radius2">4dp</dimen>
+    <dimen name="radius3">6dp</dimen>
+    <dimen name="radius4">8dp</dimen>
+    <dimen name="radius5">12dp</dimen>
+    <dimen name="feed_w">186dp</dimen>
+    <dimen name="feed_h">126dp</dimen>
+    <dimen name="reader_tool_w">282dp</dimen>
+    <dimen name="reader_tool_h">38dp</dimen>
+    <dimen name="landing_app_bar_h">150dp</dimen>
+    <dimen name="banner_logo_h">32dp</dimen>
+    <dimen name="feed_grid_w">246dp</dimen>
+    <dimen name="feed_grid_h">80dp</dimen>
+    <dimen name="slash_loading_w">180dp</dimen>
+    <dimen name="loading_image_w">150dp</dimen>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@id/llPrimaryTool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <ImageButton
+            android:id="@id/btnSmallChar"
+            android:layout_width="@dimen/unit0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_char_a_small"
+            android:tint="@color/btn_state_l" />
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/shade_3" />
+
+
+        <ImageButton
+            android:id="@id/btnBigChar"
+            android:layout_width="@dimen/unit0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_char_a"
+            android:tint="@color/btn_state_l" />
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/shade_3" />
+
+
+        <ImageButton
+            android:id="@id/btnNightMode"
+            android:layout_width="@dimen/unit0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_moon"
+            android:tint="@color/btn_state_l" />
+
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/shade_3" />
+
+        <ImageButton
+            android:id="@id/btnBrightness"
+            android:layout_width="@dimen/unit0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_brightness"
+            android:tint="@color/btn_state_l" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/llSecondaryTool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/unit4"
+        android:layout_marginEnd="@dimen/unit4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+
+            android:id="@id/btnDecBrightness"
+            android:layout_width="@dimen/unit3"
+            android:layout_height="@dimen/unit3"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shape_circle"
+            android:tint="@color/dark_shade_2" />
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@id/sbBrightness"
+            android:layout_width="@dimen/unit0"
+            android:layout_height="@dimen/unit4"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/unit4"
+            android:layout_marginEnd="@dimen/unit4"
+            android:layout_weight="1"
+            android:background="@null"
+            android:max="255"
+            android:paddingStart="@dimen/unit0"
+            android:paddingEnd="@dimen/unit0"
+            android:progressDrawable="@drawable/progress_bar"
+            android:thumb="@null" />
+        <ImageButton
+            android:id="@id/btnIncBrightness"
+            android:layout_width="@dimen/unit5"
+            android:layout_height="@dimen/unit5"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_sun"
+            android:tint="@color/dark_shade_2" />
+    </LinearLayout>
+
+</merge>

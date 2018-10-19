@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.LandingActivity">
+
+    <FrameLayout
+        android:id="@id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.AppBarLayout
+        style="@style/AppTheme.ActionBar.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/landing_app_bar_h">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:title="">
+
+            <ImageView
+                android:id="@id/AppBarColorBehaviour.ivBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/landing_prop"
+                app:layout_collapseMode="parallax" />
+
+            <ImageView
+                android:id="@id/ivLogoBanner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_logo_h"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/unit3"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/banner_logo"
+                app:layout_collapseMode="pin" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@id/tbPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.r4hu7.xyzreader.ui.view.AppBarColorBehaviour" />
+
+</android.support.design.widget.CoordinatorLayout>

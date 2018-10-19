@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_like" type="id" />
+    <item name="action_share" type="id" />
+    <item name="AppBarColorBehaviour_cvBg" type="id" />
+    <item name="AppBarColorBehaviour.ivBg" type="id" />
+    <item name="btnBigChar" type="id" />
+    <item name="btnBrightness" type="id" />
+    <item name="btnDecBrightness" type="id" />
+    <item name="btnIncBrightness" type="id" />
+    <item name="btnNightMode" type="id" />
+    <item name="btnSmallChar" type="id" />
+    <item name="cvReaderTool" type="id" />
+    <item name="flContainer" type="id" />
+    <item name="ivLoading" type="id" />
+    <item name="ivLoadingLogo" type="id" />
+    <item name="ivLogoBanner" type="id" />
+    <item name="llPrimaryTool" type="id" />
+    <item name="llSecondaryTool" type="id" />
+    <item name="rvContainer" type="id" />
+    <item name="rvContainer2" type="id" />
+    <item name="rvContainer3" type="id" />
+    <item name="sbBrightness" type="id" />
+    <item name="svContainer" type="id" />
+    <item name="tbPrimary" type="id" />
+    <item name="tvBody" type="id" />
+    <item name="AppBarColorBehaviour_ivBanner" type="id" />
+</resources>

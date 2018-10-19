@@ -1,0 +1,203 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/dark_shade_2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/shade_4</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="AppTheme.ToolBar.Light" parent="AppTheme">
+        <item name="android:background">@color/shade_0</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextColor">@color/shade_4</item>
+    </style>
+
+    <style name="AppTheme.ToolBar.Dark" parent="AppTheme">
+        <item name="android:background">@color/dark_shade_1</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="titleTextColor">@color/shade_4</item>
+    </style>
+
+    <style name="AppTheme.ToolBar.Light.Transparent" parent="AppTheme.ToolBar.Light">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="AppTheme.ToolBar.Dark.Transparent" parent="AppTheme.ToolBar.Dark">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Light" parent="AppTheme">
+        <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
+        <item name="elevation">4dp</item>
+        <item name="android:background">@color/shade_0</item>
+        <item name="android:toolbarStyle" tools:targetApi="lollipop">@style/AppTheme.ToolBar.Light
+        </item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Dark" parent="AppTheme.ActionBar.Light">
+        <item name="android:elevation" tools:targetApi="lollipop">0dp</item>
+        <item name="elevation">4dp</item>
+        <item name="android:background">@color/dark_shade_1</item>
+        <item name="android:toolbarStyle" tools:targetApi="lollipop">@style/AppTheme.ToolBar.Dark
+        </item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Light.Transparent" parent="AppTheme.ActionBar.Light">
+        <item name="android:background">@null</item>
+        <item name="android:toolbarStyle" tools:targetApi="lollipop">
+            @style/AppTheme.ToolBar.Light.Transparent
+        </item>
+    </style>
+
+    <!-- Typography -->
+    <style name="typography_dark">
+        <item name="android:textColor">@color/dark_shade_2</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/shade_0</item>
+    </style>
+
+    <style name="typography_light">
+        <item name="android:textColor">@color/shade_0</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/dark_shade_2</item>
+    </style>
+
+    <style name="typography_display4" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_display4</item>
+    </style>
+
+    <style name="typography_display3" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_display3</item>
+    </style>
+
+    <style name="typography_display2" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_display2</item>
+    </style>
+
+    <style name="typography_display1" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_display1</item>
+    </style>
+
+    <style name="typography_headline" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_headline</item>
+    </style>
+
+    <style name="typography_headline2" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_headline2</item>
+    </style>
+
+    <style name="typography_title" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_title</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+    </style>
+
+    <style name="typography_subheading" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_subheading</item>
+    </style>
+
+    <style name="typography_body2" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_body2</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+    </style>
+
+    <style name="typography_body1" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_body1</item>
+    </style>
+
+    <style name="typography_caption" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_caption</item>
+    </style>
+
+    <style name="typography_caption_bold" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_caption</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="typography_exponent" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_exponent</item>
+    </style>
+
+    <style name="typography_button" parent="typography_dark">
+        <item name="android:textSize">@dimen/typography_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+    </style>
+
+    <style name="typography_display4_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_display4</item>
+    </style>
+
+    <style name="typography_display3_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_display3</item>
+    </style>
+
+    <style name="typography_display2_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_display2</item>
+    </style>
+
+    <style name="typography_display1_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_display1</item>
+    </style>
+
+    <style name="typography_headline_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_headline</item>
+    </style>
+
+    <style name="typography_headline2_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_headline2</item>
+    </style>
+
+    <style name="typography_title_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_title</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+    </style>
+
+    <style name="typography_subheading_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_subheading</item>
+    </style>
+
+    <style name="typography_body2_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_body2</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+    </style>
+
+    <style name="typography_body1_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_body1</item>
+    </style>
+
+    <style name="typography_caption_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_caption</item>
+    </style>
+
+    <style name="typography_caption_bold_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_caption</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="typography_exponent_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_exponent</item>
+    </style>
+
+    <style name="typography_button_light" parent="typography_light">
+        <item name="android:textSize">@dimen/typography_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+    </style>
+
+
+</resources>

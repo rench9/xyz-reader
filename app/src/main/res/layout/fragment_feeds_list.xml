@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.r4hu7.xyzreader.ui.vm.FeedsViewModel" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/unit8"
+        android:paddingTop="@dimen/unit0"
+        android:paddingEnd="@dimen/unit8"
+        android:paddingBottom="@dimen/unit0"
+        android:scrollbars="none"
+        tools:context=".ui.fragment.FeedsListFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit5"
+            android:layout_marginBottom="@dimen/unit5"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit4"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typography_body2_light"
+                    android:layout_width="@dimen/unit0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/featured" />
+
+                <TextView
+                    style="@style/typography_caption_bold_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/rvContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutAnimation="@anim/feed_card_slide_in"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/unit7"
+                android:layout_marginBottom="@dimen/unit7"
+                android:alpha="0.3"
+                android:background="@color/shade_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit4"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typography_body2_light"
+                    android:layout_width="@dimen/unit0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/trending" />
+
+                <TextView
+                    style="@style/typography_caption_bold_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/rvContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/unit7"
+                android:layout_marginBottom="@dimen/unit7"
+                android:alpha="0.3"
+                android:background="@color/shade_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit4"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/typography_body2_light"
+                    android:layout_width="@dimen/unit0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/latest" />
+
+                <TextView
+                    style="@style/typography_caption_bold_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/rvContainer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</layout>
