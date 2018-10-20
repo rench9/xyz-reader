@@ -93,6 +93,7 @@
                     android:background="@{vm.isDarkMode?@color/shade_3:@color/dark_shade_1}" />
 
                 <TextView
+                    android:fontFamily="@font/source_serif_pro_bold"
                     style="@style/typography_headline2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -143,5 +144,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_behavior="com.r4hu7.xyzreader.ui.view.AppBarColorBehaviourReader" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@id/fabScrollTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/unit7"
+            android:layout_marginBottom="@dimen/unit20"
+            android:tint="@color/dark_shade_2"
+            android:visibility="gone"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_arrow_up" />
     </android.support.design.widget.CoordinatorLayout>
 </layout>

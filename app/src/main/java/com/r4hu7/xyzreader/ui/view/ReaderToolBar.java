@@ -73,7 +73,6 @@ public class ReaderToolBar extends Toolbar {
             flags |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;   // add LIGHT_STATUS_BAR to flag
             activity.getWindow().getDecorView().setSystemUiVisibility(flags);
             lightStatusBar = true;
-//            activity.getWindow().setStatusBarColor(Color.TRANSPARENT); // optional
         }
     }
 
@@ -85,7 +84,6 @@ public class ReaderToolBar extends Toolbar {
             flags ^= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR; // use XOR here for remove LIGHT_STATUS_BAR from flags
             activity.getWindow().getDecorView().setSystemUiVisibility(flags);
             lightStatusBar = false;
-//            activity.getWindow().setStatusBarColor(Color.TRANSPARENT); // optional
         }
     }
 

@@ -44,7 +44,6 @@ public class AppBarColorBehaviour extends CoordinatorLayout.Behavior {
 
         dependency.setBackground(colorDrawable);
         return true;
-//        return super.onDependentViewChanged(parent, child, dependency);
     }
 
     @Override

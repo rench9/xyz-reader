@@ -110,8 +110,6 @@ public class LandingActivity extends AppCompatActivity implements FeedNavigator 
     }
 
     public void hideSplashDialog() {
-//        splashScreenFragment.dismiss();
-//        splashScreenFragment.dismissAllowingStateLoss();
         if (splashScreenFragment.isVisible())
             splashScreenFragment.animateLogo(ivLogoBanner.getX(), ivLogoBanner.getY(), ivLogoBanner.getMeasuredHeight());
     }

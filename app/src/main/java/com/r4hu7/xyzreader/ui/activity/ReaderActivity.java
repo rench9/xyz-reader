@@ -11,6 +11,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.content.ContextCompat;
@@ -20,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -53,8 +55,12 @@ public class ReaderActivity extends AppCompatActivity implements ReaderToolCardV
 
     @BindView(R.id.svContainer)
     NestedScrollView svContainer;
+
     @BindView(R.id.tvBody)
     TextView tvBody;
+
+    @BindView(R.id.fabScrollTop)
+    FloatingActionButton fabScrollTop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +86,9 @@ public class ReaderActivity extends AppCompatActivity implements ReaderToolCardV
             else
                 cvReaderTool.setVisibility(View.VISIBLE);
         });
+        fabScrollTop.setOnClickListener(view ->
+            svContainer.fullScroll(View.FOCUS_UP)
+        );
     }
 
     @Override
@@ -116,6 +125,17 @@ public class ReaderActivity extends AppCompatActivity implements ReaderToolCardV
         binding.setVm(viewModel);
         tbPrimary.setDarkTheme();
         this.OnNightModeChange(viewModel.isDarkMode.get());
+        svContainer.setOnScrollChangeListener((NestedScrollView.OnScrollChangeListener) (nestedScrollView, i, i1, i2, i3) -> {
+            if (i1 < 500) {
+                fabScrollTop.hide();
+                return;
+            }
+            if (i3 > i1 && i1 > 500 && fabScrollTop.getVisibility() != View.VISIBLE) {
+                fabScrollTop.show();
+            } else if (i1 > i3 && fabScrollTop.getVisibility() == View.VISIBLE) {
+                fabScrollTop.hide();
+            }
+        });
     }
 
     @Override

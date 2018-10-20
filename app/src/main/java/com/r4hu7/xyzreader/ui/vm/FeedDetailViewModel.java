@@ -27,23 +27,10 @@ public class FeedDetailViewModel extends ViewModel {
 
     @BindingAdapter("thumbSrc")
     public static void setThumb(ImageView view, String url) {
-/*        ViewPropertyTransition.Animator animationObject = view1 -> {
-            view1.setScaleX(1f);
-            view1.setScaleY(1f);
-            ObjectAnimator scaleY = ObjectAnimator.ofFloat(view1, "scaleY", 1.2f, 1f);
-            ObjectAnimator scaleX = ObjectAnimator.ofFloat(view1, "scaleX", 1.2f, 1f);
-            scaleX.setInterpolator(new DecelerateInterpolator());
-            scaleY.setInterpolator(new DecelerateInterpolator());
-            scaleY.setDuration(500);
-            scaleX.setDuration(500);
-            scaleX.start();
-            scaleY.start();
-        };*/
         GlideApp.with(view.getContext())
                 .asBitmap()
                 .centerCrop()
                 .placeholder(R.drawable.placeholder)
-//                .transition(GenericTransitionOptions.with(animationObject))
                 .load(url)
                 .into(view);
     }

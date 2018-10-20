@@ -28,6 +28,7 @@
                     style="@style/typography_headline"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_serif_pro_bold"
                     android:text="@{vm.feed.title}"
                     android:textStyle="bold" />
 

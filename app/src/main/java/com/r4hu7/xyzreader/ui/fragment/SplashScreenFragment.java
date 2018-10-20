@@ -107,7 +107,6 @@ public class SplashScreenFragment extends DialogFragment implements ValueAnimato
     @Override
     public void dismiss() {
         isDismissed = true;
-//        super.dismiss();
     }
 
 
@@ -141,7 +140,6 @@ public class SplashScreenFragment extends DialogFragment implements ValueAnimato
             float _y = (float) valueAnimator1.getAnimatedValue("Y");
             float _s = (float) valueAnimator1.getAnimatedValue("S");
 
-//            ivLoadingLogo.setTranslationX(_x);
             ivLoadingLogo.setTranslationY(_y);
             ivLoadingLogo.setScaleX(_s);
             ivLoadingLogo.setScaleY(_s);
@@ -169,6 +167,15 @@ public class SplashScreenFragment extends DialogFragment implements ValueAnimato
 
             }
         });
-        valueAnimator.start();
+        try {
+            valueAnimator.start();
+        } catch (Exception e) {
+            SplashScreenFragment.super.dismiss();
+            SplashScreenFragment.super.dismissAllowingStateLoss();
+        }
+    }
+
+    public boolean isDismissed() {
+        return isDismissed;
     }
 }

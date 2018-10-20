@@ -68,11 +68,13 @@
 
     <!-- Typography -->
     <style name="typography_dark">
+        <item name="android:fontFamily">@font/source_serif_pro</item>
         <item name="android:textColor">@color/dark_shade_2</item>
         <item name="android:colorAccent" tools:targetApi="lollipop">@color/shade_0</item>
     </style>
 
     <style name="typography_light">
+        <item name="android:fontFamily">@font/source_serif_pro</item>
         <item name="android:textColor">@color/shade_0</item>
         <item name="android:colorAccent" tools:targetApi="lollipop">@color/dark_shade_2</item>
     </style>
@@ -125,7 +127,7 @@
 
     <style name="typography_caption_bold" parent="typography_dark">
         <item name="android:textSize">@dimen/typography_caption</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/source_serif_pro_semibold</item>
     </style>
 
     <style name="typography_exponent" parent="typography_dark">

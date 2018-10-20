@@ -43,7 +43,6 @@ public class SummaryDialogFragment extends DialogFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setStyle(STYLE_NO_TITLE, R.style.Theme_AppCompat_NoActionBar);
         setStyle(DialogFragment.STYLE_NO_TITLE, R.style.AppTheme_Dialog);
     }
 

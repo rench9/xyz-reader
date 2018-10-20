@@ -25,4 +25,5 @@
     <item name="tbPrimary" type="id" />
     <item name="tvBody" type="id" />
     <item name="AppBarColorBehaviour_ivBanner" type="id" />
+    <item name="fabScrollTop" type="id" />
 </resources>

@@ -59,7 +59,6 @@ public class AppBarColorBehaviourReader extends CoordinatorLayout.Behavior {
         }
 
         return true;
-//        return super.onDependentViewChanged(parent, child, dependency);
     }
 
     @Override
